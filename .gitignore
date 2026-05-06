@@ -1,0 +1,43 @@
+# --- Secrets ---
+.env
+.env.local
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# --- Environnements virtuels ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Index FAISS et caches modeles (generes, lourds) ---
+index_faiss/*.index
+index_faiss/*.pkl
+.cache/
+.huggingface/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+streamlit.log
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Archives du projet (on ne commit pas ses propres zips) ---
+*.zip
